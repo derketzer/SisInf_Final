@@ -3,7 +3,7 @@
 	class db extends MySQLi{
 		private static $DBhost = "localhost";
 		private static $DBuser = "ketzer_tablon";
-		private static $DBpass = "V1p54q1AyEctvDf0zSSwcXnci";
+		private static $DBpass = "";
 		private static $DBname = "ketzer_tablon";
 		private static $port = "3306";
 		private static $socket = "";
