@@ -1,0 +1,122 @@
+body{
+	margin: 0px;
+	background-color: #FFF;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+#header{
+	width: 100%;
+	height: 35px;
+	background-color: #EB8700;
+}
+
+#header div{
+	float: right;
+}
+
+#loginButton{
+	width: 75px;
+	height: 25px;
+	background-color: #FFF;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	line-height: 25px;
+	text-align: center;
+	cursor: pointer;
+	margin-right: 50px;
+	font-weight: bold;
+}
+
+#escuelaButton{
+	color: #FFF;
+	margin-right: 65px;
+	line-height: 35px;
+	cursor: pointer;
+	height: 35px;
+	width: 110px;
+	text-align: center;
+}
+
+#menuEscuelas{
+	position: absolute;
+	right: 65px;
+	background-color: #EB8700;
+	width: 110px;
+	text-align: center;
+	border-left: 1px solid #EB8700;
+	border-right: 1px solid #EB8700;
+	border-bottom: 1px solid #EB8700;
+	display: none;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+#menuEscuelas ul{
+	list-style-type: none;
+}
+
+#menuEscuelas ul li{
+	height: 25px;
+	line-height: 25px;
+	color: #EFEFEF;
+	cursor: pointer;
+}
+
+#menuEscuelas ul li:last-child{
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+
+#menuEscuelas ul li:hover{
+	background-color: #EFEFEF;
+	color: #000;
+}
+
+#menuEscuelas ul, #menuEscuelas ul li{
+	margin: 0px;
+	padding: 0px;
+}
+
+#logoAnahuac{
+	width: 346px;
+	height: 65px;
+	background: url(/img/logo_anahuac_nombre.png) 0px 0px no-repeat;
+	position: absolute;
+	left: 50px;
+	top: 15px;
+}
+
+#wrap{
+	min-height: 500px;
+}
+
+#footer{
+	clear: both;
+	width: 100%;
+	height: 100px;
+	background-color: #000;
+	color: #FFF;
+	text-align: center;	
+}
+
+#footer a{
+	color: #FFF;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+#footer a:hover{
+	color: #E40045;
+	text-decoration: underline;
+}
+
+#linksFooter{
+	height: 50px;
+	line-height: 50px;
+}
+
+#copyrightFooter{
+	height: 50px;
+	line-height: 50px;
+}
