@@ -3,7 +3,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta http-equiv="content-language" content="es">
 
-		<title>{$title} - {$Name}</title>
+		<title>{$title} - {$name}</title>
 
 		<!-- Se incluyen las librerías estandar necesarias -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
@@ -25,6 +25,35 @@
 
 		<div id="header">
 			<div id="escuelaButton">Anáhuac Norte</div>
+		</div>
+
+		<div id="loginBox">
+			<div id="loginDatos">
+				<div>&nbsp;</div>
+
+				<div id="loginDatosUsuario">
+					Usuario:<br />
+					<input type="text" name="user" id="loginInputUser" />
+				</div>
+
+				<div>&nbsp;</div>
+
+				<div id="loginDatosPassword">
+					Contraseña:<br />
+					<input type="text" name="pass" id="loginInputPass" />
+				</div>
+
+				<div>&nbsp;</div>
+
+				<div id="loginDatosRecordar">
+					<input type="checkbox" /> Recordar mi password
+				</div>
+
+				<div style="height: 20px;">&nbsp;</div>
+
+				<input type="button" id="loginSend" value="Ingresar" />
+			</div>
+
 			<div id="loginButton">Ingresar</div>
 		</div>
 
@@ -35,6 +64,8 @@
 			</ul>
 		</div>
 
-		<div id="logoAnahuac"></div>
+		<a href="/">
+			<div id="logoAnahuac"></div>
+		</a>
 
 		<div id="wrap">

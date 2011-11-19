@@ -9,7 +9,7 @@
 			</div>
 
 			<div id="copyrightFooter">
-				&copy; 2011 <a href="http://www.codemonkey.mx" target="_blank">Codemonkey.mx</a> | Probado únicamente en Firefox, Chrome e Internet Explorer 8/9
+				&copy; 2011 <a href="http://www.codemonkey.mx" target="_blank">Codemonkey.mx</a> | &nbsp;&nbsp;Probado únicamente en Firefox, Chrome e Internet Explorer 8/9
 			</div>
 		</div>
 

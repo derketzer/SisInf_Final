@@ -15,6 +15,9 @@
 
 	$smarty->assign("urlBase", "http://www.aplikt.com");
 
+	$smarty->assign("title", "Anáhuac Comparte");
+	$smarty->assign("name", "Tablón de Anuncios Anáhuac");
+
 	/*//$smarty->force_compile = true;
 	$smarty->debugging = true;
 	$smarty->caching = true;

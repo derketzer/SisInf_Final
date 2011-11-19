@@ -26,6 +26,10 @@ body{
 	cursor: pointer;
 	margin-right: 50px;
 	font-weight: bold;
+	margin-left: 173px;
+	border-left: 1px solid #EFEFEF;
+	border-bottom: 1px solid #EFEFEF;
+	border-right: 1px solid #EFEFEF;
 }
 
 #escuelaButton{
@@ -89,12 +93,15 @@ body{
 
 #wrap{
 	min-height: 500px;
+	width: 900px;
+	margin: auto;
+	margin-top: 70px;
 }
 
 #footer{
 	clear: both;
 	width: 100%;
-	height: 100px;
+	height: 65px;
 	background-color: #000;
 	color: #FFF;
 	text-align: center;	
@@ -108,15 +115,88 @@ body{
 
 #footer a:hover{
 	color: #E40045;
-	text-decoration: underline;
 }
 
 #linksFooter{
-	height: 50px;
-	line-height: 50px;
+	height: 25px;
+	line-height: 40px;
 }
 
 #copyrightFooter{
-	height: 50px;
-	line-height: 50px;
+	height: 25px;
+	line-height: 40px;
+}
+
+#loginBox{
+	width: 250px;
+	height: 200px;
+	position: absolute;
+	top: -225px;
+	right: 250px;
+}
+
+#loginBox input[type=text]{
+	border: 1px solid #EB8700;
+	width: 215px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+#loginDatos{
+	background-color: #EFEFEF;
+	height: 225px;
+	border-bottom-left-radius: 10px;
+}
+
+#loginDatosUsuario{
+	margin-left: 15px;
+}
+
+#loginDatosPassword{
+	margin-left: 15px;
+}
+
+#loginDatosRecordar{
+	margin-left: 15px;
+}
+
+#loginSend{
+	border: 1px solid #EB8700;
+	width: 80px;
+	height: 28px;
+	border-radius: 6px;
+	margin-left: 150px;
+	font-weight: bold;
+}
+
+#menuPrincipal{
+	width: 155px;
+	/*border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;*/
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: #EFEFEF;
+	position: absolute;
+	left: 0px;
+	top: 115px;
+}
+
+#menuPrincipal .activo a, #menuPrincipal .submenuPrincipal a:hover{
+	color: #E40045;
+}
+
+.submenuPrincipal{
+	height: 30px;
+	line-height: 30px;
+	margin-left: 20px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.submenuPrincipal a{
+	text-decoration: none;
+	color: #7C4300;
 }

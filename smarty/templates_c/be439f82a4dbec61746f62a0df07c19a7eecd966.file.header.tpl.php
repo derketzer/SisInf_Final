@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.5, created on 2011-11-16 21:00:27
+<?php /* Smarty version Smarty-3.1.5, created on 2011-11-18 22:06:06
          compiled from "templates/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:10247272374ec46cbe58afa1-40105619%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'be439f82a4dbec61746f62a0df07c19a7eecd966' => 
     array (
       0 => 'templates/header.tpl',
-      1 => 1321498764,
+      1 => 1321675566,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'variables' => 
   array (
     'title' => 0,
-    'Name' => 0,
+    'name' => 0,
     'urlBase' => 0,
     'scripts' => 0,
     'estilos' => 0,
@@ -33,7 +33,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<meta http-equiv="content-language" content="es">
 
 		<title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
- - <?php echo $_smarty_tpl->tpl_vars['Name']->value;?>
+ - <?php echo $_smarty_tpl->tpl_vars['name']->value;?>
 </title>
 
 		<!-- Se incluyen las librerías estandar necesarias -->
@@ -60,6 +60,35 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 		<div id="header">
 			<div id="escuelaButton">Anáhuac Norte</div>
+		</div>
+
+		<div id="loginBox">
+			<div id="loginDatos">
+				<div>&nbsp;</div>
+
+				<div id="loginDatosUsuario">
+					Usuario:<br />
+					<input type="text" name="user" id="loginInputUser" />
+				</div>
+
+				<div>&nbsp;</div>
+
+				<div id="loginDatosPassword">
+					Contraseña:<br />
+					<input type="text" name="pass" id="loginInputPass" />
+				</div>
+
+				<div>&nbsp;</div>
+
+				<div id="loginDatosRecordar">
+					<input type="checkbox" /> Recordar mi password
+				</div>
+
+				<div style="height: 20px;">&nbsp;</div>
+
+				<input type="button" id="loginSend" value="Ingresar" />
+			</div>
+
 			<div id="loginButton">Ingresar</div>
 		</div>
 
@@ -70,6 +99,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			</ul>
 		</div>
 
-		<div id="logoAnahuac"></div>
+		<a href="/">
+			<div id="logoAnahuac"></div>
+		</a>
 
 		<div id="wrap"><?php }} ?>

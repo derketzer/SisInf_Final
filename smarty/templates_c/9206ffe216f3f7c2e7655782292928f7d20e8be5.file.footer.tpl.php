@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.5, created on 2011-11-16 20:40:56
+<?php /* Smarty version Smarty-3.1.5, created on 2011-11-18 21:50:28
          compiled from "templates/footer.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:6901065564ec46cbe5d2489-88356914%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9206ffe216f3f7c2e7655782292928f7d20e8be5' => 
     array (
       0 => 'templates/footer.tpl',
-      1 => 1321497655,
+      1 => 1321674619,
       2 => 'file',
     ),
   ),
@@ -30,7 +30,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			</div>
 
 			<div id="copyrightFooter">
-				&copy; 2011 <a href="http://www.codemonkey.mx" target="_blank">Codemonkey.mx</a> | Probado únicamente en Firefox, Chrome e Internet Explorer 8/9
+				&copy; 2011 <a href="http://www.codemonkey.mx" target="_blank">Codemonkey.mx</a> | &nbsp;&nbsp;Probado únicamente en Firefox, Chrome e Internet Explorer 8/9
 			</div>
 		</div>
 
