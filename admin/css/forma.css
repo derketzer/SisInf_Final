@@ -1,0 +1,40 @@
+.campo-forma-linea{
+	width: 600px;
+	clear: both;
+	margin-bottom: 12px;
+}
+
+.campo-forma-titulo{
+	width: 580px;
+	height: 30px;
+	line-height: 30px;
+	padding: 0px 10px 0px 10px;
+	margin-bottom: 5px;
+	background-color: #EB8700;
+	color: #000000;
+}
+
+.campo-forma-texto input[type="text"], .campo-forma-texto input[type="password"], .campo-forma-texto select{
+	border: 1px solid #FFA7F5;
+	width: 578px;
+	height: 30px;
+	line-height: 30px;
+	padding: 0px 10px 0px 10px;
+}
+
+.campo-forma-texto select{
+	width: 600px;
+	padding: 5px 10px 5px 10px;
+}
+
+.campo-forma-linea input[type="submit"]{
+	height: 40px;
+	width: 75px;
+	border: 1px solid #FFA7F5;
+	background-color: #FFF;
+	font-size: 14px;
+}
+
+.campo-forma-submit{
+	text-align: center;
+}

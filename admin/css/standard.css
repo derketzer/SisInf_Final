@@ -1,0 +1,53 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	color: #000;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+#header{
+	height: 80px;
+	background-color: #FCC57E;
+	padding: 10px;
+}
+
+#content{
+	margin: 15px;
+	overflow: visible;
+}
+
+#footer{
+	height: 55px;
+	background-color: #FCC57E;
+	font-size: 12px;
+	padding: 10px;
+	text-align: center;
+}
+
+.errorMessage{
+	max-width: 590px;
+	height: 20px;
+	line-height: 20px;
+	padding:5px;
+	color: #FF0000;
+	background-color: #CCCCCC;
+	margin-bottom: 10px;
+}
+
+.successMessage{
+	max-width: 590px;
+	height: 20px;
+	line-height: 20px;
+	padding:5px;
+	color: #00FF00;
+	background-color: #CCCCCC;
+	margin-bottom: 10px;
+}
+
+#migajas{
+	font-size: 12px;
+}
