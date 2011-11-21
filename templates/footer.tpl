@@ -1,3 +1,4 @@
+			<div style="height:50px;">&nbsp;</div>
 		</div>
 
 		<div id="footer">

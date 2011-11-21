@@ -14,11 +14,19 @@
 		<!-- Variable que incluye las librerías extra -->
 		{$scripts}
 
+		{foreach from=$scripts item=script}
+			<script src="{$urlBase}/js/{$script}.js" type="text/javascript"></script>
+		{/foreach}
+
 		<!-- Se incluyen los estilos básicos-->
 		<link rel="stylesheet" type="text/css" href="{$urlBase}/css/standard.css" />
 
 		<!-- Variable que incluye las librerías extra -->
-		{$estilos}
+		{foreach from=$estilos item=estilo}
+			<link rel="stylesheet" type="text/css" href="{$urlBase}/css/{$estilo}.css" />
+		{/foreach}
+
+		<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 	</head>
 
 	<body>

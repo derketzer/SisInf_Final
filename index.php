@@ -18,6 +18,42 @@
 	$smarty->assign("title", "Anáhuac Comparte");
 	$smarty->assign("name", "Tablón de Anuncios Anáhuac");
 
+	$smarty->assign("estilos", array("index"));
+
+	$smarty->assign("ofertasDestacadas",
+		array(
+			array("imagen"=>"/img/tv.jpg",
+				"titulo"=>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+				"url"=>"/bla"
+			),
+			array("imagen"=>"/img/xbox.jpg",
+				"titulo"=>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+				"url"=>"/bla"
+			),
+			array("imagen"=>"/img/microwave.jpg",
+				"titulo"=>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+				"url"=>"/bla"
+			)
+		)
+	);
+
+	$smarty->assign("ofertasNuevas",
+		array(
+			array("imagen"=>"/img/tv.jpg",
+				"titulo"=>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+				"url"=>"/bla"
+			),
+			array("imagen"=>"/img/xbox.jpg",
+				"titulo"=>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+				"url"=>"/bla"
+			),
+			array("imagen"=>"/img/microwave.jpg",
+				"titulo"=>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+				"url"=>"/bla"
+			)
+		)
+	);
+
 	/*//$smarty->force_compile = true;
 	$smarty->debugging = true;
 	$smarty->caching = true;

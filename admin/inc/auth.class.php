@@ -27,7 +27,7 @@
 			return ($tmp_hash == $hash) ? TRUE : FALSE;
 		}
 		
-		public static function hash($passwort, $cost = NULL){
+		public static function hash($passwort="", $cost = NULL){
 			// Prüfen ob Blowfish vom Server unterstützt wird
 			self::checkBlowfish();
 

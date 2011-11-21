@@ -1,0 +1,43 @@
+.tituloIndex{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.ofertaURL{
+	text-decoration: none;
+}
+
+.ofertaItem{
+	float: left;
+	width: 280px;
+	margin-right: 10px;
+	overflow: hidden;
+	border: 1px solid #EB8700;
+}
+
+.ofertaImagen{
+	width: 280px;
+	height: 210px;
+	text-align: center;
+}
+
+.ofertaImagen img{
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	max-width: 260px;
+	max-height: 190px;
+}
+
+.ofertaTitulo{
+	background-color: #FCC57E;
+	min-height: 60px;
+}
+
+.ofertaTituloTexto{
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 260px;
+	text-align: justify;
+	color: #7C4300;
+}

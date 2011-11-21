@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.5, created on 2011-11-18 22:06:06
+<?php /* Smarty version Smarty-3.1.5, created on 2011-11-20 23:03:31
          compiled from "templates/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:10247272374ec46cbe58afa1-40105619%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'be439f82a4dbec61746f62a0df07c19a7eecd966' => 
     array (
       0 => 'templates/header.tpl',
-      1 => 1321675566,
+      1 => 1321851806,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'name' => 0,
     'urlBase' => 0,
     'scripts' => 0,
+    'script' => 0,
     'estilos' => 0,
+    'estilo' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -47,13 +49,32 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<?php echo $_smarty_tpl->tpl_vars['scripts']->value;?>
 
 
+		<?php  $_smarty_tpl->tpl_vars['script'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['script']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['scripts']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['script']->key => $_smarty_tpl->tpl_vars['script']->value){
+$_smarty_tpl->tpl_vars['script']->_loop = true;
+?>
+			<script src="<?php echo $_smarty_tpl->tpl_vars['urlBase']->value;?>
+/js/<?php echo $_smarty_tpl->tpl_vars['script']->value;?>
+.js" type="text/javascript"></script>
+		<?php } ?>
+
 		<!-- Se incluyen los estilos básicos-->
 		<link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['urlBase']->value;?>
 /css/standard.css" />
 
 		<!-- Variable que incluye las librerías extra -->
-		<?php echo $_smarty_tpl->tpl_vars['estilos']->value;?>
+		<?php  $_smarty_tpl->tpl_vars['estilo'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['estilo']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['estilos']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['estilo']->key => $_smarty_tpl->tpl_vars['estilo']->value){
+$_smarty_tpl->tpl_vars['estilo']->_loop = true;
+?>
+			<link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['urlBase']->value;?>
+/css/<?php echo $_smarty_tpl->tpl_vars['estilo']->value;?>
+.css" />
+		<?php } ?>
 
+		<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 	</head>
 
 	<body>

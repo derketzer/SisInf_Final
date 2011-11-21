@@ -3,4 +3,6 @@
 
 {include file="menu.tpl"}
 
+{include file="productos_index.tpl"}
+
 {include file="footer.tpl"}
