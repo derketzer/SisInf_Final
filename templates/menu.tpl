@@ -4,13 +4,13 @@
 		<a href="/">Inicio</a>
 	</div>
 	<div class="submenuPrincipal">
-		<a href="">Departamentos</a>
+		<a href="/categoria/departamentos">Departamentos</a>
 	</div>
 	<div class="submenuPrincipal">
-		<a href="">Electrónicos</a>
+		<a href="/categoria/electronicos">Electr&oacute;nicos</a>
 	</div>
 	<div class="submenuPrincipal">
-		<a href="">Domésticos</a>
+		<a href="/categoria/domesticos">Dom&eacute;sticos</a>
 	</div>
 	<div class="submenuPrincipal">
 		<a href="/logout.php">Salir</a>

@@ -34,17 +34,19 @@
 
 <div id="ofertasNuevas">
 	{foreach from=$ofertasNuevas item=oferta}
-		<div class="ofertaItem">
-			<div class="ofertaImagen">
-				<img src="{$oferta.imagen}" />
-			</div>
+		<a href="{$urlBase}{$oferta.url}" class="ofertaURL">
+			<div class="ofertaItem">
+				<div class="ofertaImagen">
+					<img src="{$oferta.imagen}" />
+				</div>
 
-			<div class="ofertaTitulo">
-				<div class="ofertaTituloTexto">
-					{$oferta.titulo}
+				<div class="ofertaTitulo">
+					<div class="ofertaTituloTexto">
+						{$oferta.titulo}
+					</div>
 				</div>
 			</div>
-		</div>
+		</a>
 	{/foreach}
 
 	<div style="clear:both;"></div>

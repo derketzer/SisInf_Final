@@ -1,4 +1,9 @@
 <?php
+	if($_GET['url'] == ""){
+		header("HTTP/1.0 404 Not Found");
+		exit();
+	}
+
 	require('smarty/libs/Smarty.class.php');
 
 	$smarty = new Smarty;
@@ -16,7 +21,7 @@
 	$smarty->assign("title", "An&aacute;huac Comparte");
 	$smarty->assign("name", "Tabl&oacute;n de Anuncios An&aacute;huac");
 
-	$smarty->assign("estilos", array("index"));
+	$smarty->assign("estilos", array("articulo"));
 
 	$DBuser = "ketzer_tablon";
 	$DBpass = "Hv8hgTLatHCVGHMnZaWeefhjc";
@@ -33,40 +38,56 @@
 		exit();
 	}
 
+	$url = "/articulo/".$_GET['url'];
+
 	$consulta = $mysqli->query("
 		SELECT
-			a.titulo,
-			a.url AS url_producto,
-			b.url AS url_imagen
+			c.usuario,
+			b.categoria,
+			a.titulo AS descripcion,
+			d.url AS imagen
 		FROM
 			{$prefijo}anuncio AS a
 		INNER JOIN
-			{$prefijo}media AS b
+			{$prefijo}categoria AS b
 		ON
-			a.id_media_principal = b.id_media
-		LIMIT
-			3
+			a.id_categoria = b.id_categoria
+		INNER JOIN
+			{$prefijo}usuario AS c
+		ON
+			a.id_usuario = c.id_usuario
+		INNER JOIN
+			{$prefijo}media AS d
+		ON
+			a.id_media_principal = d.id_media
+		WHERE
+			a.url = '".$url."'
 	");
 
-	$ofertas = array();
-	$i = 0;
+	$articuloDetalles = array();
 
 	while($fila = $consulta->fetch_assoc()){
-		$ofertas[$i] = array();
-		$ofertas[$i]['imagen'] = $fila['url_imagen'];
-		$ofertas[$i]['titulo'] = $fila['titulo'];
-		$ofertas[$i]['url'] = $fila['url_producto'];
+		$i = 0;
 
-		$i++;
+		foreach($fila as $col=>$val){
+			if($col != "imagen"){
+				$articuloDetalles[$i] = array();
+				$articuloDetalles[$i]['titulo'] = ucfirst($col).":";
+				$articuloDetalles[$i]['texto'] = utf8_encode($val);
+				$i++;
+			}else{
+				$smarty->assign("imagen", $fila['imagen']);
+			}
+		}
 	}
-
-	$smarty->assign("ofertasDestacadas", $ofertas);
-
-	$smarty->assign("ofertasNuevas", $ofertas);
 
 	$consulta->close();
 
+	$smarty->assign("articuloDetalles", $articuloDetalles);
+
+	$smarty->assign("articuloComentarios", array(array(), array()));
+
 	$mysqli->close();
 
-	$smarty->display('index.tpl');
+	$smarty->display('articulo.tpl');
 ?>
