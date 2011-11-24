@@ -3,6 +3,6 @@
 
 {include file="menu.tpl"}
 
-{include file="index_productos.tpl"}
+{include file="index_articulos.tpl"}
 
 {include file="footer.tpl"}
