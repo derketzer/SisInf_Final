@@ -1,0 +1,139 @@
+#anuncioTop{
+	border-bottom: 1px solid #000;
+}
+
+#anuncioIzquierda{
+	float: left;
+	width: 300px;
+	margin-right: 15px;
+}
+
+#anuncioImagen img{
+	max-width: 280px;
+	margin-left: auto;
+}
+
+#anuncioDerecha{
+	float: left;
+	width: 575px;
+}
+
+.anuncioDetalle{
+	height: 30px;
+	line-height: 30px;
+}
+
+.anuncioDetalleTitulo{
+	float: left;
+	width: 100px;
+	margin-right: 15px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.anuncioDetalleTexto{
+	float: left;
+	width: 460px;
+	font-size: 14px;
+	text-align: justify;
+}
+
+#anuncioBottom{
+	margin-top: 30px;
+}
+
+#anuncioComentarios{
+	width: 600px;
+	margin-right: 60px;
+	float: left;
+}
+
+#anuncioAlgo{
+	width: 240px;
+	float: left;
+}
+
+#comentariosHeader h2{
+	float: left;
+	width: 50%;
+}
+
+#botonComentar{
+	text-align: right;
+	cursor: pointer;
+}
+
+#cajaComentar{
+	width: 598px;;
+	height: 150px;
+	border: 1px solid #7C4300;
+	display: none;
+}
+
+#cajaComentarWrap{
+	margin: 10px;
+	width: 578px;
+	height: 130px;
+	text-align: center;
+}
+
+#textComentario{
+	width: 578px;
+	border: 1px solid #EB8700;
+	height: 100px;
+}
+
+#buttonComentar{
+	border: 1px solid #EB8700;
+	margin-top: 10px;
+	background-color: #FFF;
+}
+
+.anuncioComentarioTitulo{
+	height: 30px;
+	line-height: 30px;
+	background-color: #7C4300;
+}
+
+.anuncioComentarioUsuario, .anuncioComentarioFecha{
+	float: left;
+	width: 285px;
+	color: #EB8700;
+}
+
+.anuncioComentarioUsuario{
+	margin-left: 15px;
+}
+
+.anuncioComentarioFecha{
+	margin-right: 15px;
+	text-align: right;
+}
+
+.anuncioComentarioTexto{
+	width: 598px;
+	line-height: 20px;
+	text-align: justify;
+	border-left: 1px solid #7C4300;
+	border-right: 1px solid #7C4300;
+	border-bottom: 1px solid #7C4300;
+}
+
+.anuncioComentarioTextoWrap{
+	margin: 0px 10px 10px 10px;
+	width: 578px;
+}
+
+.recomendado{
+	border: 1px solid #7C4300;
+	width: 70px;
+	height: 70px;
+	margin-right: 8px;
+	float: left;
+}
+
+.recomendado img{
+	margin: 5px;
+	width: 60px;
+	height: 60px;
+}

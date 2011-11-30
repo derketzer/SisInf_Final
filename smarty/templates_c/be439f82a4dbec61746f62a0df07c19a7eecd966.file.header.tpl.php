@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.5, created on 2011-11-20 23:03:31
+<?php /* Smarty version Smarty-3.1.5, created on 2011-11-29 17:49:26
          compiled from "templates/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:10247272374ec46cbe58afa1-40105619%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'be439f82a4dbec61746f62a0df07c19a7eecd966' => 
     array (
       0 => 'templates/header.tpl',
-      1 => 1321851806,
+      1 => 1322610566,
       2 => 'file',
     ),
   ),
@@ -26,6 +26,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'script' => 0,
     'estilos' => 0,
     'estilo' => 0,
+    'logged' => 0,
+    'menuEscuelas' => 0,
+    'menuItem' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -38,14 +41,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
  - <?php echo $_smarty_tpl->tpl_vars['name']->value;?>
 </title>
 
-		<!-- Se incluyen las librerías estandar necesarias -->
+		<!-- Se incluyen las libreri�as estandar necesarias -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/jquery-ui.min.js" type="text/javascript"></script>
 
 		<script src="<?php echo $_smarty_tpl->tpl_vars['urlBase']->value;?>
 /js/standard.js" type="text/javascript"></script>
 
-		<!-- Variable que incluye las librerías extra -->
+		<!-- Variable que incluye las libreri�as extra -->
 		<?php echo $_smarty_tpl->tpl_vars['scripts']->value;?>
 
 
@@ -59,11 +62,11 @@ $_smarty_tpl->tpl_vars['script']->_loop = true;
 .js" type="text/javascript"></script>
 		<?php } ?>
 
-		<!-- Se incluyen los estilos básicos-->
+		<!-- Se incluyen los estilos basicos-->
 		<link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['urlBase']->value;?>
 /css/standard.css" />
 
-		<!-- Variable que incluye las librerías extra -->
+		<!-- Variable que incluye las libreri�as extra -->
 		<?php  $_smarty_tpl->tpl_vars['estilo'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['estilo']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['estilos']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['estilo']->key => $_smarty_tpl->tpl_vars['estilo']->value){
@@ -80,7 +83,7 @@ $_smarty_tpl->tpl_vars['estilo']->_loop = true;
 	<body>
 
 		<div id="header">
-			<div id="escuelaButton">Anáhuac Norte</div>
+			<div id="escuelaButton">An&aacute;huac Norte</div>
 		</div>
 
 		<div id="loginBox">
@@ -95,7 +98,7 @@ $_smarty_tpl->tpl_vars['estilo']->_loop = true;
 				<div>&nbsp;</div>
 
 				<div id="loginDatosPassword">
-					Contraseña:<br />
+					Contrase&ntilde;a:<br />
 					<input type="text" name="pass" id="loginInputPass" />
 				</div>
 
@@ -110,13 +113,25 @@ $_smarty_tpl->tpl_vars['estilo']->_loop = true;
 				<input type="button" id="loginSend" value="Ingresar" />
 			</div>
 
-			<div id="loginButton">Ingresar</div>
+			<?php if ($_smarty_tpl->tpl_vars['logged']->value==0){?>
+				<div id="loginButton">Ingresar</div>
+			<?php }else{ ?>
+				<a href="/logout.php">
+					<div id="logoutButton">Salir</div>
+				</a>
+			<?php }?>
 		</div>
 
 		<div id="menuEscuelas">
 			<ul>
-				<li>Anáhuac Norte</li>
-				<li>Anáhuac Sur</li>
+				<?php  $_smarty_tpl->tpl_vars['menuItem'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['menuItem']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['menuEscuelas']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['menuItem']->key => $_smarty_tpl->tpl_vars['menuItem']->value){
+$_smarty_tpl->tpl_vars['menuItem']->_loop = true;
+?>
+					<li><?php echo $_smarty_tpl->tpl_vars['menuItem']->value['escuela'];?>
+</li>
+				<?php } ?>
 			</ul>
 		</div>
 
@@ -124,4 +139,5 @@ $_smarty_tpl->tpl_vars['estilo']->_loop = true;
 			<div id="logoAnahuac"></div>
 		</a>
 
-		<div id="wrap"><?php }} ?>
+		<div id="wrap">
+<?php }} ?>

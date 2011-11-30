@@ -3,6 +3,6 @@
 
 {include file="menu.tpl"}
 
-{include file="index_anuncios.tpl"}
+{include file="agregar_anuncio_forma.tpl"}
 
 {include file="footer.tpl"}

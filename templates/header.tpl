@@ -5,23 +5,23 @@
 
 		<title>{$title} - {$name}</title>
 
-		<!-- Se incluyen las librerías estandar necesarias -->
+		<!-- Se incluyen las libreri�as estandar necesarias -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/jquery-ui.min.js" type="text/javascript"></script>
 
 		<script src="{$urlBase}/js/standard.js" type="text/javascript"></script>
 
-		<!-- Variable que incluye las librerías extra -->
+		<!-- Variable que incluye las libreri�as extra -->
 		{$scripts}
 
 		{foreach from=$scripts item=script}
 			<script src="{$urlBase}/js/{$script}.js" type="text/javascript"></script>
 		{/foreach}
 
-		<!-- Se incluyen los estilos básicos-->
+		<!-- Se incluyen los estilos basicos-->
 		<link rel="stylesheet" type="text/css" href="{$urlBase}/css/standard.css" />
 
-		<!-- Variable que incluye las librerías extra -->
+		<!-- Variable que incluye las libreri�as extra -->
 		{foreach from=$estilos item=estilo}
 			<link rel="stylesheet" type="text/css" href="{$urlBase}/css/{$estilo}.css" />
 		{/foreach}
@@ -32,7 +32,7 @@
 	<body>
 
 		<div id="header">
-			<div id="escuelaButton">Anáhuac Norte</div>
+			<div id="escuelaButton">An&aacute;huac Norte</div>
 		</div>
 
 		<div id="loginBox">
@@ -47,7 +47,7 @@
 				<div>&nbsp;</div>
 
 				<div id="loginDatosPassword">
-					Contraseña:<br />
+					Contrase&ntilde;a:<br />
 					<input type="text" name="pass" id="loginInputPass" />
 				</div>
 
@@ -62,13 +62,20 @@
 				<input type="button" id="loginSend" value="Ingresar" />
 			</div>
 
-			<div id="loginButton">Ingresar</div>
+			{if $logged == 0}
+				<div id="loginButton">Ingresar</div>
+			{else}
+				<a href="/logout.php">
+					<div id="logoutButton">Salir</div>
+				</a>
+			{/if}
 		</div>
 
 		<div id="menuEscuelas">
 			<ul>
-				<li>Anáhuac Norte</li>
-				<li>Anáhuac Sur</li>
+				{foreach from=$menuEscuelas item=menuItem}
+					<li>{$menuItem.escuela}</li>
+				{/foreach}
 			</ul>
 		</div>
 
